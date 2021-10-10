@@ -1,1 +1,4 @@
+#.gitignoreに書いたのに無視されない場合の対応
+#キャッシュの削除：git rm -r --cached .
+
 /memo.txt

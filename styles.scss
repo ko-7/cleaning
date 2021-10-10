@@ -1,0 +1,53 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+.content1{
+  width: 100%;
+  height: calc(100vw / 2);
+  background-color: #D1E2ff;
+  .content-inner{
+    position: relative;
+    img{
+      position: absolute;
+      top: 30px;
+      left: 0px;
+      width: calc(100vw * 0.475);
+      transform: rotate(-10deg);
+    }
+    .text-wrap{
+      text-align: right;
+      .title{
+        width: 100%;
+        position: absolute;
+        top: calc(100vw * 0.13);
+        left: 0;
+        text-align: center;
+        font-size: 6.5vw;
+        letter-spacing: -0.04em;
+      }
+      .price{
+        position: absolute;
+        top: 3.6vw;
+        left: calc(50% - 14vw);
+        padding-right: 20px;
+        width: 47vw;
+        text-align: right;
+        font-family: "impact";
+        font-style: italic;
+        font-size: 14.9vw;
+        letter-spacing: 0.02em;
+        color: #c00;
+        .price-txt{
+          position: absolute;
+          top: calc(100vw * 0.275);
+          left: calc(50% + 32.5vw);
+          font-size: 4.9vw;
+          font-weight: bold;
+          line-height: 1;
+          font-family: "新ゴ B";
+        }
+      }
+    }
+  }
+}

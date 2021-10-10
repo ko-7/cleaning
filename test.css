@@ -1,0 +1,19 @@
+h2{
+  margin: 0;
+  line-height: 55px;
+  font-size: 52px;
+}
+.upper{
+  background-color: #D1E2ff;
+  padding: 10px 10px 0 10px;
+}
+.lower{
+  padding: 10px;
+  background-color: #D00;
+  font-size: 45px;
+}
+span{
+  color: yellow;
+  font-size: 52px;
+  font-family: serif;
+}
