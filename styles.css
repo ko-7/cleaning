@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   margin: 0;
   padding: 0;
@@ -6,58 +5,57 @@ body {
 
 .content1 {
   width: 100%;
-  height: calc(100vw / 2);
-  background-color: #D1E2ff;
+  min-height: 740px;
+  background: linear-gradient(150deg, #58f, #e8e8e8, #58f);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .content1 .content-inner {
   position: relative;
+  max-width: 800px;
+  max-height: 540px;
+  margin: 100px auto;
+  padding: 0 50px 50px 50px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50px;
+  border: 8px solid #fff;
 }
 
-.content1 .content-inner img {
+.content1 .content-inner h2 {
+  margin: 50px 0;
+  font-size: 42px;
+  line-height: 56px;
+}
+
+.content1 .content-inner h2 span {
+  padding: 1px;
+  font-size: 56px;
+  color: #dd0000;
+  line-height: 100px;
+  border-bottom: 5px solid #dd0000;
+}
+
+.content1 .content-inner .half-price {
   position: absolute;
-  top: 30px;
-  left: 0px;
-  width: calc(100vw * 0.475);
-  -webkit-transform: rotate(-10deg);
-          transform: rotate(-10deg);
+  top: 200px;
+  left: 460px;
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
 }
 
-.content1 .content-inner .text-wrap {
-  text-align: right;
-}
-
-.content1 .content-inner .text-wrap .title {
-  width: 100%;
+.content1 .content-inner .person {
   position: absolute;
-  top: calc(100vw * 0.13);
-  left: 0;
-  text-align: center;
-  font-size: 6.5vw;
-  letter-spacing: -0.04em;
+  bottom: 0px;
+  right: -350px;
 }
 
-.content1 .content-inner .text-wrap .price {
-  position: absolute;
-  top: 3.6vw;
-  left: calc(50% - 14vw);
-  padding-right: 20px;
-  width: 47vw;
-  text-align: right;
-  font-family: "impact";
-  font-style: italic;
-  font-size: 14.9vw;
-  letter-spacing: 0.02em;
-  color: #c00;
-}
-
-.content1 .content-inner .text-wrap .price .price-txt {
-  position: absolute;
-  top: calc(100vw * 0.275);
-  left: calc(50% + 32.5vw);
-  font-size: 4.9vw;
-  font-weight: bold;
-  line-height: 1;
-  font-family: "新ゴ B";
+.content1 .content-inner .appeal {
+  margin-top: 80px;
+  padding-right: 100px;
 }
 /*# sourceMappingURL=styles.css.map */

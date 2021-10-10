@@ -4,50 +4,45 @@ body{
 }
 .content1{
   width: 100%;
-  height: calc(100vw / 2);
-  background-color: #D1E2ff;
+  min-height: 740px;
+  background: linear-gradient(150deg, #58f, #e8e8e8, #58f);
+  display: flex;
+  justify-content: center;
   .content-inner{
     position: relative;
-    img{
-      position: absolute;
-      top: 30px;
-      left: 0px;
-      width: calc(100vw * 0.475);
-      transform: rotate(-10deg);
+    max-width: 800px;
+    max-height: 540px;
+    margin: 100px auto;
+    padding: 0 50px 50px 50px;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 50px;
+    border: 8px solid #fff;
+    h2{
+      margin: 50px 0;
+      font-size: 42px;
+      line-height: 56px;
+      span{
+        padding: 1px;
+        font-size: 56px;
+        color: #dd0000;
+        line-height: 100px;
+        border-bottom: 5px solid #dd0000;
+      }
     }
-    .text-wrap{
-      text-align: right;
-      .title{
-        width: 100%;
-        position: absolute;
-        top: calc(100vw * 0.13);
-        left: 0;
-        text-align: center;
-        font-size: 6.5vw;
-        letter-spacing: -0.04em;
-      }
-      .price{
-        position: absolute;
-        top: 3.6vw;
-        left: calc(50% - 14vw);
-        padding-right: 20px;
-        width: 47vw;
-        text-align: right;
-        font-family: "impact";
-        font-style: italic;
-        font-size: 14.9vw;
-        letter-spacing: 0.02em;
-        color: #c00;
-        .price-txt{
-          position: absolute;
-          top: calc(100vw * 0.275);
-          left: calc(50% + 32.5vw);
-          font-size: 4.9vw;
-          font-weight: bold;
-          line-height: 1;
-          font-family: "新ゴ B";
-        }
-      }
+    .half-price{
+      position: absolute;
+      top: 200px;
+      left: 460px;
+      transform: rotate(20deg);
+    }
+    .person{
+      position: absolute;
+      bottom: 0px;
+      right: -350px;
+    }
+    .appeal{
+      margin-top: 80px;
+      padding-right: 100px;
     }
   }
 }

@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-cleaning-dev-203008-authRole",
+      "UnauthRoleArn": "arn:aws:iam::724087957096:role/amplify-cleaning-dev-203008-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::724087957096:role/amplify-cleaning-dev-203008-authRole",
+      "Region": "ap-northeast-1",
+      "DeploymentBucketName": "amplify-cleaning-dev-203008-deployment",
+      "UnauthRoleName": "amplify-cleaning-dev-203008-unauthRole",
+      "StackName": "amplify-cleaning-dev-203008",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:724087957096:stack/amplify-cleaning-dev-203008/6e0ee370-29bd-11ec-9c63-0abb99471eff",
+      "AmplifyAppId": "d28dj8kho5sa4e"
+    }
+  }
+}
