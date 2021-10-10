@@ -5,7 +5,7 @@ body {
 
 .content1 {
   width: 100%;
-  min-height: 740px;
+  min-height: 1040px;
   background: linear-gradient(150deg, #58f, #e8e8e8, #58f);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13,6 +13,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  overflow: hidden;
 }
 
 .content1 .content-inner {
@@ -57,5 +58,41 @@ body {
 .content1 .content-inner .appeal {
   margin-top: 80px;
   padding-right: 100px;
+}
+
+.content2 {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1070px;
+  min-height: 600px;
+  overflow: hidden;
+}
+
+.content2 .content-inner {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.content3 {
+  padding: 50px 0;
+  background: -webkit-gradient(linear, left top, right top, from(#58f), color-stop(50%, #e8e8e8), to(#58f));
+  background: linear-gradient(90deg, #58f, #e8e8e8 50%, #58f 100%);
+}
+
+.content3 .content-inner {
+  max-width: 800px;
+  max-height: 540px;
+  margin: 50px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
 }
 /*# sourceMappingURL=styles.css.map */
