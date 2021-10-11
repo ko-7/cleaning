@@ -3,10 +3,45 @@ body {
   padding: 0;
 }
 
+ul {
+  list-style: none;
+}
+
+button {
+  width: 300px;
+  height: 50px;
+  margin: 0px auto;
+  margin-top: 30px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#f00), to(#ff7f50));
+  background: linear-gradient(0deg, #f00, #ff7f50);
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  -webkit-box-shadow: 1px 3px #555;
+          box-shadow: 1px 3px #555;
+}
+
+button:hover {
+  font-size: 18px;
+}
+
+button:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  position: relative;
+  top: 2px;
+  left: 1px;
+}
+
+.divider {
+  border-bottom: 3px solid #00f;
+}
+
 .content1 {
   width: 100%;
   min-height: 1040px;
-  background: linear-gradient(150deg, #58f, #e8e8e8, #58f);
+  background: linear-gradient(150deg, #13f, #e8e8e8 40%, #13f);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -34,11 +69,11 @@ body {
 }
 
 .content1 .content-inner h2 span {
-  padding: 1px;
   font-size: 56px;
   color: #dd0000;
   line-height: 100px;
-  border-bottom: 5px solid #dd0000;
+  -webkit-text-decoration: underline red 5px;
+          text-decoration: underline red 5px;
 }
 
 .content1 .content-inner .half-price {
@@ -74,15 +109,15 @@ body {
 }
 
 .content3 {
-  padding: 50px 0;
-  background: -webkit-gradient(linear, left top, right top, from(#58f), color-stop(50%, #e8e8e8), to(#58f));
-  background: linear-gradient(90deg, #58f, #e8e8e8 50%, #58f 100%);
+  padding: 30px 0;
+  background: -webkit-gradient(linear, left top, right top, from(#13f), color-stop(10%, #38f), color-stop(50%, #e8e8e8), color-stop(90%, #58f), to(#13f));
+  background: linear-gradient(90deg, #13f, #38f 10%, #e8e8e8 50%, #58f 90%, #13f);
 }
 
 .content3 .content-inner {
-  max-width: 800px;
-  max-height: 540px;
-  margin: 50px auto;
+  padding: 30px;
+  width: 80%;
+  margin: 0px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -90,9 +125,108 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   background-color: white;
+  border-radius: 30px;
+}
+
+.content3 .content-inner h2 {
+  margin: 0;
+  font-size: 24px;
+  line-height: 30px;
+  color: #00f;
+}
+
+.content3 .content-inner p {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.content3 .content-inner span {
+  color: red;
+  font-weight: bold;
+}
+
+.content4 {
+  padding: 30px 0;
+  background: -webkit-gradient(linear, left top, right top, from(#13f), color-stop(10%, #38f), color-stop(50%, #e8e8e8), color-stop(90%, #58f), to(#13f));
+  background: linear-gradient(90deg, #13f, #38f 10%, #e8e8e8 50%, #58f 90%, #13f);
+}
+
+.content4 .content-inner {
+  padding: 30px;
+  width: 80%;
+  margin: 0px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  border-radius: 30px;
+  border: 3px solid red;
+}
+
+.content4 .content-inner h2 {
+  margin: 0;
+  font-size: 24px;
+  line-height: 30px;
+  border-bottom: 3px solid black;
+}
+
+.content4 .content-inner p {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.content4 .content-inner .active-place {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content4 .content-inner .active-place img {
+  margin: 0 30px;
+}
+
+.content4 .content-inner .active-place ul {
+  margin: 0;
+  padding: 0;
+}
+
+.content5 {
+  padding: 30px 0;
+  background: -webkit-gradient(linear, left top, right top, from(#13f), color-stop(10%, #38f), color-stop(50%, #e8e8e8), color-stop(90%, #58f), to(#13f));
+  background: linear-gradient(90deg, #13f, #38f 10%, #e8e8e8 50%, #58f 90%, #13f);
+}
+
+.content5 .content-inner {
+  padding: 30px;
+  width: 80%;
+  margin: 0px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  border-radius: 30px;
+  border: 3px solid red;
+}
+
+.content5 .content-inner h2 {
+  margin: 0;
+  font-size: 24px;
+  line-height: 30px;
+  border-bottom: 3px solid black;
+}
+
+.content5 .content-inner p {
+  font-size: 20px;
+  margin: 20px 0;
 }
 /*# sourceMappingURL=styles.css.map */
