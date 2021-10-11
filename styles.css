@@ -246,4 +246,74 @@ button:active {
   margin: 0 auto;
   margin-top: 30px;
 }
+
+.content6 {
+  padding: 30px 0;
+  background: -webkit-gradient(linear, left top, right top, from(#13f), color-stop(10%, #38f), color-stop(50%, #e8e8e8), color-stop(90%, #58f), to(#13f));
+  background: linear-gradient(90deg, #13f, #38f 10%, #e8e8e8 50%, #58f 90%, #13f);
+}
+
+.content6 .content-inner {
+  padding: 30px;
+  width: 80%;
+  margin: 0px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  border-radius: 30px;
+}
+
+.content6 .content-inner h2 {
+  margin: 0;
+  font-size: 24px;
+  line-height: 30px;
+  color: blue;
+  border-bottom: 3px solid blue;
+}
+
+.content6 .content-inner table {
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 30px;
+  border: 1px solid #1a7ab3;
+  border-collapse: collapse;
+  text-align: center;
+  position: relative;
+}
+
+.content6 .content-inner table thead {
+  background-color: #35f;
+  color: white;
+}
+
+.content6 .content-inner table tbody {
+  line-height: 50px;
+}
+
+.content6 .content-inner table tbody th {
+  font-size: 20px;
+}
+
+.content6 .content-inner table tbody td {
+  font-size: 16px;
+}
+
+.content6 .content-inner table img {
+  position: absolute;
+  top: 30px;
+  left: 520px;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+}
+
+.content6 .content-inner span {
+  color: red;
+  font-weight: bold;
+  font-size: 26px;
+}
 /*# sourceMappingURL=styles.css.map */

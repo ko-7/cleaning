@@ -195,3 +195,56 @@ button{
   }
 }
 
+.content6{
+  padding: 30px 0;
+  background: linear-gradient(90deg, #13f, #38f 10% , #e8e8e8 50%, #58f 90%, #13f);
+  .content-inner{
+    padding: 30px;
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 30px;
+    h2{
+      margin: 0;
+      font-size: 24px;
+      line-height: 30px;
+      color: blue;
+      border-bottom: 3px solid blue;
+    }
+    table{
+      width: 600px;
+      margin: 0 auto;
+      margin-top: 30px;
+      border: 1px solid #1a7ab3;
+      border-collapse: collapse;
+      text-align: center;
+      position: relative;
+      thead{
+        background-color: #35f;
+        color: white;
+      }
+      tbody{
+        line-height: 50px;
+        th{
+          font-size: 20px;
+        }
+        td{
+          font-size: 16px;
+        }
+      }
+      img{
+        position: absolute;
+        top: 30px;
+        left: 520px;
+        transform: rotate(10deg);
+      }
+    }
+    span{
+      color: red;
+      font-weight: bold;
+      font-size: 26px;
+    }
+  }
+}
