@@ -156,7 +156,7 @@ button{
 
 .content5{
   padding: 30px 0;
-  background: linear-gradient(90deg, #13f, #38f 10% , #e8e8e8 50%, #58f 90%, #13f);
+  // background: linear-gradient(90deg, #13f, #38f 10% , #e8e8e8 50%, #58f 90%, #13f);
   .content-inner{
     padding: 30px;
     width: 80%;
@@ -165,17 +165,32 @@ button{
     flex-direction: column;
     background-color: white;
     border-radius: 30px;
-    border: 3px solid red;
     h2{
       margin: 0;
       font-size: 24px;
       line-height: 30px;
-      
-      border-bottom: 3px solid black;
+      color: blue;
+      border-bottom: 3px solid blue;
     }
-    p{
-      font-size: 20px;
-      margin: 20px 0;
+    .achievement-wrap{
+      display: flex;
+      .text{
+        h3{
+          margin-top: 30px;
+          margin-bottom: 0;
+          font-size: 22px;
+          text-decoration: underline red;
+        }
+        p{
+          margin: 0;
+          font-size: 20px;
+        }
+      }
+      img{
+        margin: 0 auto;
+        margin-top: 30px;
+      }
+
     }
   }
 }

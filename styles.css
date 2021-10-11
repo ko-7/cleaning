@@ -198,8 +198,6 @@ button:active {
 
 .content5 {
   padding: 30px 0;
-  background: -webkit-gradient(linear, left top, right top, from(#13f), color-stop(10%, #38f), color-stop(50%, #e8e8e8), color-stop(90%, #58f), to(#13f));
-  background: linear-gradient(90deg, #13f, #38f 10%, #e8e8e8 50%, #58f 90%, #13f);
 }
 
 .content5 .content-inner {
@@ -215,18 +213,37 @@ button:active {
           flex-direction: column;
   background-color: white;
   border-radius: 30px;
-  border: 3px solid red;
 }
 
 .content5 .content-inner h2 {
   margin: 0;
   font-size: 24px;
   line-height: 30px;
-  border-bottom: 3px solid black;
+  color: blue;
+  border-bottom: 3px solid blue;
 }
 
-.content5 .content-inner p {
+.content5 .content-inner .achievement-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content5 .content-inner .achievement-wrap .text h3 {
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-size: 22px;
+  -webkit-text-decoration: underline red;
+          text-decoration: underline red;
+}
+
+.content5 .content-inner .achievement-wrap .text p {
+  margin: 0;
   font-size: 20px;
-  margin: 20px 0;
+}
+
+.content5 .content-inner .achievement-wrap img {
+  margin: 0 auto;
+  margin-top: 30px;
 }
 /*# sourceMappingURL=styles.css.map */
