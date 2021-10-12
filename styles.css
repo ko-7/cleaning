@@ -387,4 +387,33 @@ button:active {
   line-height: 30px;
   border-bottom: 3px solid black;
 }
+
+footer {
+  padding: 100px 0px;
+  background-color: #eee;
+  text-align: center;
+}
+
+footer h2 {
+  margin: 0;
+  color: #35c;
+}
+
+footer .wrap {
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 10px;
+  background: #fff;
+  border: 3px solid #13f;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer .wrap span {
+  display: block;
+  margin: 0 auto;
+  font-size: 24px;
+}
 /*# sourceMappingURL=styles.css.map */
