@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0;
   padding: 0;
@@ -69,7 +70,10 @@ button:active {
 }
 
 .content1 .content-inner h2 span {
+  margin-right: 10px;
   font-size: 56px;
+  font-family: 'impact';
+  font-style: italic;
   color: #dd0000;
   line-height: 100px;
   -webkit-text-decoration: underline red 5px;
@@ -172,7 +176,8 @@ button:active {
   margin: 0;
   font-size: 24px;
   line-height: 30px;
-  border-bottom: 3px solid black;
+  color: blue;
+  border-bottom: 3px solid blue;
 }
 
 .content4 .content-inner p {
@@ -320,13 +325,11 @@ button:active {
 
 .content7 {
   padding: 30px 0;
-  background: -webkit-gradient(linear, left top, right top, from(#13f), color-stop(10%, #38f), color-stop(50%, #e8e8e8), color-stop(90%, #58f), to(#13f));
-  background: linear-gradient(90deg, #13f, #38f 10%, #e8e8e8 50%, #58f 90%, #13f);
 }
 
 .content7 .content-inner {
+  width: 500px;
   padding: 30px;
-  width: 80%;
   margin: 0px auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -337,29 +340,34 @@ button:active {
           flex-direction: column;
   background-color: white;
   border-radius: 30px;
-  border: 3px solid red;
+  color: blue;
 }
 
 .content7 .content-inner h2 {
   margin: 0;
   font-size: 24px;
   line-height: 30px;
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid blue;
 }
 
-.content7 .content-inner p {
-  font-size: 20px;
-  margin: 20px 0;
+.content7 .content-inner ul, .content7 .content-inner ol {
+  margin: 0 auto;
+  margin-top: 10px;
+  color: black;
+  border: dashed 2px #668ad8;
+  /*破線 太さ 色*/
+  background: #f1f8ff;
+  /*背景色*/
+  padding: 0.5em 0.5em 0.5em 2em;
 }
 
-.content7 .content-inner ul {
-  padding: 0;
+.content7 .content-inner ul li, .content7 .content-inner ol li {
+  line-height: 1.5;
+  padding: 0.5em 0;
 }
 
 .content8 {
   padding: 30px 0;
-  background: -webkit-gradient(linear, left top, right top, from(#13f), color-stop(10%, #38f), color-stop(50%, #e8e8e8), color-stop(90%, #58f), to(#13f));
-  background: linear-gradient(90deg, #13f, #38f 10%, #e8e8e8 50%, #58f 90%, #13f);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -389,7 +397,7 @@ button:active {
 }
 
 footer {
-  padding: 100px 0px;
+  padding: 50px 0px;
   background-color: #eee;
   text-align: center;
 }
