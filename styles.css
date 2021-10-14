@@ -310,7 +310,7 @@ button:active {
   }
   .content4 .content-inner p {
     font-size: 20px;
-    margin: 20px 0;
+    margin: 10px 0;
   }
   .content4 .content-inner .active-place {
     margin: 0 auto;
@@ -338,7 +338,9 @@ button:active {
     margin: 0;
     padding: 0;
     margin: 0;
-    font-size: 12px;
+  }
+  .content4 .content-inner .active-place .place-list ul li {
+    font-size: 16px;
   }
 }
 
@@ -530,7 +532,7 @@ button:active {
   }
   .content6 .content-inner {
     width: 80%;
-    padding: 30px 0px;
+    padding: 30px 10px;
     margin: 0px auto;
     display: -webkit-box;
     display: -ms-flexbox;
