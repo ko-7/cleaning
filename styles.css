@@ -21,6 +21,7 @@ button {
   font-weight: bold;
   -webkit-box-shadow: 1px 3px #555;
           box-shadow: 1px 3px #555;
+  overflow: hidden;
 }
 
 button:hover {
@@ -41,7 +42,6 @@ button:active {
 
 .content1 {
   width: 100%;
-  min-height: 1040px;
   background: linear-gradient(150deg, #13f, #e8e8e8 40%, #13f);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -55,7 +55,6 @@ button:active {
 .content1 .content-inner {
   position: relative;
   max-width: 800px;
-  max-height: 540px;
   margin: 100px auto;
   padding: 0 50px 50px 50px;
   background-color: rgba(255, 255, 255, 0.5);
@@ -92,6 +91,7 @@ button:active {
   position: absolute;
   bottom: 0px;
   right: -350px;
+  height: 640px;
 }
 
 .content1 .content-inner .appeal {
@@ -99,17 +99,64 @@ button:active {
   padding-right: 100px;
 }
 
+@media screen and (max-width: 600px) {
+  .content1 .content-inner {
+    margin: 30px auto;
+    padding: 0 10px 10px 10px;
+    border: 8px solid #fff;
+  }
+  .content1 .content-inner h2 {
+    margin: 30px 0;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .content1 .content-inner h2 span {
+    margin-right: 10px;
+    font-size: 24px;
+    line-height: 30px;
+    -webkit-text-decoration: underline red 5px;
+            text-decoration: underline red 5px;
+  }
+  .content1 .content-inner .half-price {
+    position: absolute;
+    top: 200px;
+    left: 460px;
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  .content1 .content-inner .person {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    height: 200px;
+  }
+  .content1 .content-inner .appeal {
+    margin-top: 30px;
+    padding-right: 100px;
+    width: 50%;
+  }
+}
+
 .content2 {
   position: relative;
   margin: 0 auto;
   max-width: 1070px;
-  min-height: 600px;
   overflow: hidden;
 }
 
 .content2 .content-inner {
-  padding: 100px 0;
+  padding: 30px 0;
   text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .content2 {
+    width: 100%;
+    height: none;
+  }
+  .content2 img {
+    width: 100%;
+  }
 }
 
 .content3 {
@@ -195,11 +242,73 @@ button:active {
 
 .content4 .content-inner .active-place img {
   margin: 0 30px;
+  height: 100%;
 }
 
-.content4 .content-inner .active-place ul {
+.content4 .content-inner .active-place .place-list ul {
   margin: 0;
   padding: 0;
+  font-size: 12px;
+}
+
+.content4 .content-inner .active-place .place-list ul li {
+  margin: 0 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .content4 {
+    padding: 30px 0;
+  }
+  .content4 .content-inner {
+    padding: 30px;
+    width: 80%;
+    margin: 0px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .content4 .content-inner h2 {
+    margin: 0;
+    font-size: 20px;
+    line-height: 30px;
+    color: blue;
+    border-bottom: 3px solid blue;
+  }
+  .content4 .content-inner p {
+    font-size: 20px;
+    margin: 20px 0;
+  }
+  .content4 .content-inner .active-place {
+    margin: 0 auto;
+    margin-top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .content4 .content-inner .active-place img {
+    width: 100%;
+    margin: 0;
+  }
+  .content4 .content-inner .active-place .place-list {
+    margin: 0 auto;
+    margin-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .content4 .content-inner .active-place .place-list ul {
+    margin: 0;
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .content5 {
@@ -249,8 +358,63 @@ button:active {
 }
 
 .content5 .content-inner .achievement-wrap img {
+  width: 400px;
+  height: 360px;
   margin: 0 auto;
   margin-top: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .content5 {
+    padding: 30px 0;
+  }
+  .content5 .content-inner {
+    padding: 30px 10px;
+    width: 100%;
+    margin: 0px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: white;
+    border-radius: 30px;
+  }
+  .content5 .content-inner h2 {
+    margin: 0;
+    font-size: 20px;
+    line-height: 30px;
+    color: blue;
+    border-bottom: 3px solid blue;
+  }
+  .content5 .content-inner .achievement-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .content5 .content-inner .achievement-wrap .text h3 {
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-size: 16px;
+    -webkit-text-decoration: underline red;
+            text-decoration: underline red;
+  }
+  .content5 .content-inner .achievement-wrap .text p {
+    margin: 0;
+    font-size: 12px;
+  }
+  .content5 .content-inner .achievement-wrap img {
+    width: 200px;
+    height: 180px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
 }
 
 .content6 {
@@ -310,6 +474,7 @@ button:active {
 }
 
 .content6 .content-inner table img {
+  height: 120px;
   position: absolute;
   top: 30px;
   left: 520px;
@@ -321,6 +486,62 @@ button:active {
   color: red;
   font-weight: bold;
   font-size: 26px;
+}
+
+@media screen and (max-width: 600px) {
+  .content6 {
+    width: 100%;
+    padding: 30px 0;
+    background-color: white;
+  }
+  .content6 .content-inner {
+    width: 100%;
+    padding: 30px 0px;
+    margin: 0px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .content6 .content-inner h2 {
+    margin: 0;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .content6 .content-inner table {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 0 30px;
+  }
+  .content6 .content-inner table thead {
+    background-color: #35f;
+    color: white;
+  }
+  .content6 .content-inner table tbody {
+    line-height: 36px;
+  }
+  .content6 .content-inner table tbody th {
+    font-size: 12px;
+  }
+  .content6 .content-inner table tbody td {
+    font-size: 10px;
+  }
+  .content6 .content-inner table img {
+    height: 35px;
+    position: absolute;
+    top: 50px;
+    left: 260px;
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  .content6 .content-inner span {
+    font-weight: bold;
+    font-size: 16px;
+  }
 }
 
 .content7 {
@@ -366,6 +587,48 @@ button:active {
   padding: 0.5em 0;
 }
 
+@media screen and (max-width: 600px) {
+  .content7 {
+    padding: 30px 0;
+  }
+  .content7 .content-inner {
+    width: 100%;
+    padding: 30px 10px;
+    margin: 0px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: white;
+    border-radius: 30px;
+    color: blue;
+  }
+  .content7 .content-inner h2 {
+    margin: 0;
+    font-size: 20px;
+    line-height: 30px;
+    border-bottom: 3px solid blue;
+  }
+  .content7 .content-inner ul, .content7 .content-inner ol {
+    margin: 0 auto;
+    margin-top: 10px;
+    color: black;
+    border: dashed 2px #668ad8;
+    /*破線 太さ 色*/
+    background: #f1f8ff;
+    /*背景色*/
+    padding: 0.2em 0.2em 0.2em 1em;
+  }
+  .content7 .content-inner ul li, .content7 .content-inner ol li {
+    line-height: 1.5;
+    padding: 0.5em 0;
+    font-size: 12px;
+  }
+}
+
 .content8 {
   padding: 30px 0;
   display: -webkit-box;
@@ -387,13 +650,6 @@ button:active {
   background-color: white;
   border-radius: 30px;
   border: 3px solid red;
-}
-
-.content8 .content-inner h2 {
-  margin: 0;
-  font-size: 24px;
-  line-height: 30px;
-  border-bottom: 3px solid black;
 }
 
 footer {
@@ -423,5 +679,32 @@ footer .wrap span {
   display: block;
   margin: 0 auto;
   font-size: 24px;
+}
+
+@media screen and (max-width: 600px) {
+  footer {
+    padding: 50px 0px;
+    background-color: #eee;
+    text-align: center;
+  }
+  footer h2 {
+    margin: 0;
+    color: #35c;
+    font-size: 20px;
+  }
+  footer .wrap {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  footer .wrap span {
+    display: block;
+    margin: 0 auto;
+    font-size: 20px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

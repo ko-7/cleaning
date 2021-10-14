@@ -16,6 +16,7 @@ button{
   font-size: 16px;
   font-weight: bold;
   box-shadow: 1px 3px #555;
+  overflow: hidden;
   &:hover{
     font-size: 18px;
   }
@@ -32,7 +33,6 @@ button{
 
 .content1{
   width: 100%;
-  min-height: 1040px;
   background: linear-gradient(150deg, #13f, #e8e8e8 40%, #13f);
   display: flex;
   justify-content: center;
@@ -40,7 +40,6 @@ button{
   .content-inner{
     position: relative;
     max-width: 800px;
-    max-height: 540px;
     margin: 100px auto;
     padding: 0 50px 50px 50px;
     background-color: rgba(255,255,255,0.5);
@@ -58,7 +57,6 @@ button{
         color: #dd0000;
         line-height: 100px;
         text-decoration: underline red 5px;
-        // border-bottom: 5px solid #dd0000;
       }
     }
     .half-price{
@@ -71,10 +69,48 @@ button{
       position: absolute;
       bottom: 0px;
       right: -350px;
+      height: 640px;
     }
     .appeal{
       margin-top: 80px;
       padding-right: 100px;
+    }
+  }
+}
+@media screen and (max-width: 600px){
+  .content1{
+    .content-inner{
+      margin: 30px auto;
+      padding: 0 10px 10px 10px;
+      border: 8px solid #fff;
+      h2{
+        margin: 30px 0;
+        font-size: 20px;
+        line-height: 25px;
+        span{
+          margin-right: 10px;
+          font-size: 24px;
+          line-height: 30px;
+          text-decoration: underline red 5px;
+        }
+      }
+      .half-price{
+        position: absolute;
+        top: 200px;
+        left: 460px;
+        transform: rotate(20deg);
+      }
+      .person{
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        height: 200px;
+      }
+      .appeal{
+        margin-top: 30px;
+        padding-right: 100px;
+        width: 50%;
+      }
     }
   }
 }
@@ -83,11 +119,19 @@ button{
   position: relative;
   margin: 0 auto;
   max-width: 1070px; 
-  min-height: 600px;
   overflow: hidden;
   .content-inner{
-    padding: 100px 0;
+    padding: 30px 0;
     text-align: center;
+  }
+}
+@media screen and (max-width: 600px){
+  .content2{
+    width: 100%;
+    height: none;
+    img{
+      width: 100%;
+    }
   }
 }
 
@@ -149,10 +193,60 @@ button{
       display: flex;
       img{
         margin: 0 30px;
+        height: 100%;
       }
-      ul{
+      .place-list{
+        ul{
+          margin: 0;
+          padding: 0;
+          font-size: 12px;
+          li{
+            margin: 0 10px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px){
+  .content4{
+    padding: 30px 0;
+    .content-inner{
+      padding: 30px;
+      width: 80%;
+      margin: 0px auto;
+      display: flex;
+      flex-direction: column;
+      h2{
         margin: 0;
-        padding: 0;
+        font-size: 20px;
+        line-height: 30px;
+        color: blue;
+        border-bottom: 3px solid blue;
+      }
+      p{
+        font-size: 20px;
+        margin: 20px 0;
+      }
+      .active-place{
+        margin: 0 auto;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        img{
+          width: 100%;
+          margin: 0;
+        }
+        .place-list{
+          margin: 0 auto;
+          margin-top: 30px;
+          display: flex;
+          ul{
+            margin: 0;
+            padding: 0;
+            margin: 0;
+          }
+        }
       }
     }
   }
@@ -160,7 +254,6 @@ button{
 
 .content5{
   padding: 30px 0;
-  // background: linear-gradient(90deg, #13f, #38f 10% , #e8e8e8 50%, #58f 90%, #13f);
   .content-inner{
     padding: 30px;
     width: 80%;
@@ -191,10 +284,55 @@ button{
         }
       }
       img{
+        width: 400px;
+        height: 360px;
         margin: 0 auto;
         margin-top: 30px;
       }
 
+    }
+  }
+}
+@media screen and (max-width: 600px){
+  .content5{
+    padding: 30px 0;
+    .content-inner{
+      padding: 30px 10px;
+      width: 100%;
+      margin: 0px auto;
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      border-radius: 30px;
+      h2{
+        margin: 0;
+        font-size: 20px;
+        line-height: 30px;
+        color: blue;
+        border-bottom: 3px solid blue;
+      }
+      .achievement-wrap{
+        display: flex;
+        flex-direction: column;
+        .text{
+          h3{
+            margin-top: 30px;
+            margin-bottom: 0;
+            font-size: 16px;
+            text-decoration: underline red;
+          }
+          p{
+            margin: 0;
+            font-size: 12px;
+          }
+        }
+        img{
+          width: 200px;
+          height: 180px;
+          margin: 0 auto;
+          margin-top: 30px;
+        }
+      }
     }
   }
 }
@@ -239,6 +377,7 @@ button{
         }
       }
       img{
+        height: 120px;
         position: absolute;
         top: 30px;
         left: 520px;
@@ -252,14 +391,61 @@ button{
     }
   }
 }
+@media screen and (max-width: 600px){
+  .content6{
+    width: 100%;
+    padding: 30px 0;
+    background-color: white;
+    .content-inner{
+      width: 100%;
+      padding: 30px 0px;
+      margin: 0px auto;
+      display: flex;
+      flex-direction: column;
+      h2{
+        margin: 0;
+        font-size: 20px;
+        line-height: 30px;
+      }
+      table{
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 30px;
+        padding: 0 30px;
+        thead{
+          background-color: #35f;
+          color: white;
+        }
+        tbody{
+          line-height: 36px;
+          th{
+            font-size: 12px;
+          }
+          td{
+            font-size: 10px;
+          }
+        }
+        img{
+          height: 35px;
+          position: absolute;
+          top: 50px;
+          left: 260px;
+          transform: rotate(10deg);
+        }
+      }
+      span{
+        font-weight: bold;
+        font-size: 16px;
+      }
+    }
+  }
+}
 
 .content7{
   padding: 30px 0;
-  // background: linear-gradient(90deg, #13f, #38f 10% , #e8e8e8 50%, #58f 90%, #13f);
   .content-inner{
     width: 500px;
     padding: 30px;
-    // width: 80%;
     margin: 0px auto;
     display: flex;
     flex-direction: column;
@@ -267,7 +453,6 @@ button{
     border-radius: 30px;
     color: blue;
     h2{
-      // text-align: center;
       margin: 0;
       font-size: 24px;
       line-height: 30px;
@@ -277,7 +462,6 @@ button{
       margin: 0 auto;
       margin-top: 10px;
       color: black;
-      // color: #668ad8;/*文字色*/
       border: dashed 2px #668ad8;/*破線 太さ 色*/
       background: #f1f8ff; /*背景色*/
       padding: 0.5em 0.5em 0.5em 2em;
@@ -288,10 +472,43 @@ button{
     }
   }
 }
+@media screen and (max-width: 600px){
+  .content7{
+    padding: 30px 0;
+    .content-inner{
+      width: 100%;
+      padding: 30px 10px;
+      margin: 0px auto;
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      border-radius: 30px;
+      color: blue;
+      h2{
+        margin: 0;
+        font-size: 20px;
+        line-height: 30px;
+        border-bottom: 3px solid blue;
+      }
+      ul, ol {
+        margin: 0 auto;
+        margin-top: 10px;
+        color: black;
+        border: dashed 2px #668ad8;/*破線 太さ 色*/
+        background: #f1f8ff; /*背景色*/
+        padding: 0.2em 0.2em 0.2em 1em;
+      }
+      ul li, ol li {
+        line-height: 1.5;
+        padding: 0.5em 0;
+        font-size: 12px;
+      }
+    }
+  }
+}
 
 .content8{
   padding: 30px 0;
-  // background: linear-gradient(90deg, #13f, #38f 10% , #e8e8e8 50%, #58f 90%, #13f);
   display: flex;
   justify-content: center;
   .content-inner{
@@ -302,12 +519,6 @@ button{
     background-color: white;
     border-radius: 30px;
     border: 3px solid red;
-    h2{
-      margin: 0;
-      font-size: 24px;
-      line-height: 30px;
-      border-bottom: 3px solid black;
-    }
   }
 }
 
@@ -333,6 +544,32 @@ footer{
       display: block;
       margin: 0 auto;
       font-size: 24px;
+    }
+  }
+}
+@media screen and (max-width: 600px){
+  footer{
+    padding: 50px 0px;
+    background-color: #eee;
+    text-align: center;
+    h2{
+      margin: 0;
+      color: #35c;
+      font-size: 20px;
+    }
+    .wrap{
+      width: 100%;
+      margin: 0 auto;
+      margin-top: 10px;
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+      span{
+        display: block;
+        margin: 0 auto;
+        font-size: 20px;
+      }
     }
   }
 }
