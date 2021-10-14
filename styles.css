@@ -252,6 +252,7 @@ button:active {
 
 .content4 .content-inner .active-place .place-list ul li {
   margin: 0 10px;
+  font-size: 20px;
 }
 
 @media screen and (max-width: 600px) {
@@ -307,7 +308,7 @@ button:active {
     margin: 0;
     padding: 0;
     margin: 0;
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 
@@ -534,7 +535,7 @@ button:active {
     font-size: 10px;
   }
   .content6 .content-inner table img {
-    height: 35px;
+    height: 50px;
     position: absolute;
     top: 50px;
     left: 260px;
@@ -664,7 +665,7 @@ footer {
 
 footer h2 {
   margin: 0;
-  color: #35c;
+  color: #13f;
 }
 
 footer .wrap {
@@ -677,6 +678,7 @@ footer .wrap {
   text-align: center;
   text-decoration: none;
   font-weight: bold;
+  line-height: 30px;
 }
 
 footer .wrap span {
@@ -688,12 +690,10 @@ footer .wrap span {
 @media screen and (max-width: 600px) {
   footer {
     padding: 50px 0px;
-    background-color: #eee;
     text-align: center;
   }
   footer h2 {
     margin: 0;
-    color: #35c;
     font-size: 20px;
   }
   footer .wrap {
