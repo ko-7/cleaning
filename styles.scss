@@ -117,7 +117,6 @@ button{
 }
 
 .content2{
-  position: relative;
   margin: 0 auto;
   max-width: 1070px; 
   overflow: hidden;
@@ -132,10 +131,9 @@ button{
 @media screen and (max-width: 600px){
   .content2{
     width: 100%;
-    height: none;
     .content-innre{
       img{
-        width: 90%;
+        width: 100%;
       }
     }
   }
@@ -461,7 +459,7 @@ button{
           }
         }
         img{
-          height: 44px;
+          height: 40px;
           position: absolute;
           top: 50px;
           left: 270px;
