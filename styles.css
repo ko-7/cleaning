@@ -248,7 +248,6 @@ button:active {
 .content4 .content-inner .active-place .place-list ul {
   margin: 0;
   padding: 0;
-  font-size: 12px;
 }
 
 .content4 .content-inner .active-place .place-list ul li {
@@ -260,8 +259,8 @@ button:active {
     padding: 30px 0;
   }
   .content4 .content-inner {
-    padding: 30px;
-    width: 80%;
+    padding: 10px;
+    width: 90%;
     margin: 0px auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -308,6 +307,7 @@ button:active {
     margin: 0;
     padding: 0;
     margin: 0;
+    font-size: 13px;
   }
 }
 
@@ -342,6 +342,9 @@ button:active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .content5 .content-inner .achievement-wrap .text h3 {
@@ -358,8 +361,8 @@ button:active {
 }
 
 .content5 .content-inner .achievement-wrap img {
-  width: 400px;
-  height: 360px;
+  width: 30%;
+  height: 27%;
   margin: 0 auto;
   margin-top: 30px;
 }
@@ -477,7 +480,7 @@ button:active {
   height: 120px;
   position: absolute;
   top: 30px;
-  left: 520px;
+  left: 500px;
   -webkit-transform: rotate(10deg);
           transform: rotate(10deg);
 }
@@ -589,6 +592,7 @@ button:active {
 
 @media screen and (max-width: 600px) {
   .content7 {
+    width: 100%;
     padding: 30px 0;
   }
   .content7 .content-inner {
@@ -693,7 +697,7 @@ footer .wrap span {
     font-size: 20px;
   }
   footer .wrap {
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
     margin-top: 10px;
     display: block;

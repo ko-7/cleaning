@@ -199,7 +199,6 @@ button{
         ul{
           margin: 0;
           padding: 0;
-          font-size: 12px;
           li{
             margin: 0 10px;
           }
@@ -212,8 +211,8 @@ button{
   .content4{
     padding: 30px 0;
     .content-inner{
-      padding: 30px;
-      width: 80%;
+      padding: 10px;
+      width: 90%;
       margin: 0px auto;
       display: flex;
       flex-direction: column;
@@ -245,6 +244,7 @@ button{
             margin: 0;
             padding: 0;
             margin: 0;
+            font-size: 13px;
           }
         }
       }
@@ -271,6 +271,7 @@ button{
     }
     .achievement-wrap{
       display: flex;
+      align-items: center;
       .text{
         h3{
           margin-top: 30px;
@@ -284,8 +285,8 @@ button{
         }
       }
       img{
-        width: 400px;
-        height: 360px;
+        width: 30%;
+        height: 27%;
         margin: 0 auto;
         margin-top: 30px;
       }
@@ -380,7 +381,7 @@ button{
         height: 120px;
         position: absolute;
         top: 30px;
-        left: 520px;
+        left: 500px;
         transform: rotate(10deg);
       }
     }
@@ -474,6 +475,7 @@ button{
 }
 @media screen and (max-width: 600px){
   .content7{
+    width: 100%;
     padding: 30px 0;
     .content-inner{
       width: 100%;
@@ -558,7 +560,7 @@ footer{
       font-size: 20px;
     }
     .wrap{
-      width: 100%;
+      width: 90%;
       margin: 0 auto;
       margin-top: 10px;
       display: block;
